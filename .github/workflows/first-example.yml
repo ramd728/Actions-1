@@ -9,11 +9,18 @@ jobs:
         - name: checkout
           uses: actions/checkout@v6
 
-        - name: Welcome message
-          run: echo "Welcome to my first workflow!"
+        - name: List and read files
+          run: |
+            echo "Listing files in the repository:"
+            ls
+            echo "Reading the README.md file:"
+            cat README.md
+
+        #- name: Welcome message
+        #  run: echo "Welcome to my first workflow!"
         
-        - name: List files
-          run: ls
+        #- name: List files
+        #  run: ls
         
-        - name: Read the file
-          run: cat README.md
+        #- name: Read the file
+        #  run: cat README.md
