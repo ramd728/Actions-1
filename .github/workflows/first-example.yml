@@ -24,4 +24,6 @@ jobs:
         
         #- name: Read the file
         #  run: cat README.md
-        
+
+        - name: Generate ASCII artwork
+          run: cowsay -f dragon "Welcome to my first workflow!" >> dragon.txt
